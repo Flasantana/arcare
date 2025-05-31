@@ -1,0 +1,125 @@
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background-color: #ffffff;
+}
+
+.login-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 40px;
+  background-color: #f5f5f5;
+}
+
+.login-logo {
+  height: 40px;
+}
+
+.login-slogan {
+  font-size: 16px;
+  color: #f8a24b;
+  font-weight: 500;
+}
+
+.breadcrumb {
+  font-size: 14px;
+  padding: 10px 40px;
+  color: #333;
+}
+
+.breadcrumb a {
+  text-decoration: none;
+  color: #333;
+}
+
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 60px;
+  padding: 40px;
+  flex-wrap: wrap;
+}
+
+.login-image img {
+  max-width: 660px;
+  width: 100%;
+  margin-right: 50px;
+}
+
+.login-form {
+  max-width: 320px;
+  width: 100%;
+  margin-right: 260px;
+}
+
+.login-form h2 {
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.login-form p {
+  font-size: 14px;
+  margin-bottom: 16px;
+}
+
+.login-form label {
+  display: block;
+  font-size: 14px;
+  margin-bottom: 4px;
+}
+
+.login-form input {
+  width: 100%;
+  padding: 10px;
+  border-radius: 20px;
+  border: none;
+  background-color: #a5f1f0;
+  margin-bottom: 14px;
+}
+
+.login-form button {
+  width: 100%;
+  padding: 10px;
+  border-radius: 20px;
+  border: none;
+  background-color: #f8a24b;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.divider {
+  text-align: center;
+  font-size: 14px;
+  margin: 20px 0 10px;
+}
+
+.google-icon {
+  width: 40px;
+  display: block;
+  margin: 0 auto 20px;
+}
+
+.cadastro {
+  font-size: 14px;
+  text-align: center;
+}
+
+.cadastro a {
+  color: #000;
+  font-weight: 500;
+  text-decoration: underline;
+}
+
+.login-footer {
+  background-color: #FCD29F;
+  text-align: center;
+  font-size: 12px;
+  padding: 100px;
+  color: #333;
+  font-weight: bold;
+}

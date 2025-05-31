@@ -1,0 +1,487 @@
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+.header {
+  background-color: #f8f8f8;
+  padding: 16px 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.logo img {
+  height: 40px;
+}
+
+.brand {
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.laranja {
+  color: #f8a24b;
+}
+
+.azul {
+  color: #2eddd3;
+}
+
+.menu {
+  display: flex;
+  gap: 30px;
+}
+
+.menu a {
+  color: #000;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.botoes {
+  display: flex;
+  gap: 10px;
+}
+
+.btn-cadastrar,
+.btn-entrar {
+  padding: 10px 24px;
+  border: none;
+  border-radius: 22px;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.btn-cadastrar {
+  background-color: #2eddd3;
+  color: #fff;
+}
+
+.btn-entrar {
+  background-color: #f8a24b;
+  color: #fff;
+}
+
+.hero {
+  background-color: #FCAB64;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 60px 40px;
+  flex-wrap: wrap;
+  gap: 60px;
+  text-align: center; 
+}
+
+.hero-texto {
+  max-width: 500px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+}
+
+.hero-texto h1 {
+  font-size: 40px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  font-family: "Poppins", sans-serif;
+}
+
+.hero-texto p {
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 30px;
+}
+
+.hero-botoes {
+  display: flex;
+  gap: 16px;
+}
+
+.btn-acao {
+  padding: 10px 24px;
+  border: none;
+  border-radius: 22px;
+  font-size: 16px;
+  font-weight: 500;
+  background-color: #2eddd3;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn-acao:hover {
+  background-color: #25c3bc;
+}
+
+.hero-imagem img {
+  width: 494px;
+  height: 407px;
+  object-fit: cover;
+  border-radius: 16px;
+}
+.ajuda-container {
+  background-color: #ffffff;
+  padding: 60px 20px;
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.ajuda-container h1 {
+  font-size: 32px;
+  font-weight: bold;
+  color: #333333;
+  margin-bottom: 20px;
+}
+
+.ajuda-container p {
+  font-size: 18px;
+  color: #555555;
+  line-height: 1.6;
+}
+
+.card-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+  padding: 40px;
+}
+
+.card {
+  width: 320px;
+  height: 320px;
+  border-radius: 16px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+  padding: 20px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: #FCD29F; /* valor padrão, será alternado com classes */
+}
+
+.card:nth-child(even) {
+  background-color: #96E9E7;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.25);
+}
+
+.card h2 {
+  font-size: 32px;
+  color: #222;
+  margin-bottom: 10px;
+}
+
+.card p {
+  font-size: 20px;
+  color: #555;
+  flex-grow: 1;
+  margin-bottom: 50px;
+}
+
+.card button {
+  width: 208px;
+  height: 44px;
+  border: none;
+  border-radius: 120px;
+  background-color: #00d2c0;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  align-self: center;
+  transition: background-color 0.3s ease;
+}
+
+.card button:hover {
+  background-color: #f8a24b;
+}
+
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 55px; 
+  padding: 0 250px;
+  justify-items: center;
+
+  margin-bottom: 100px; 
+}
+
+
+.emergencia-container {
+  text-align: center;
+  padding: 0px 60px ;
+}
+
+.emergencia-container h1 {
+  font-size: 40px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.emergencia-container p {
+  font-size: 18px;
+  max-width: 700px;
+  margin: 0 auto 30px;
+  line-height: 1.6;
+  color: #555;
+}
+
+.emergencia-container img {
+  max-width: 500px;
+  width: 100%;
+  border-radius: 12px;
+}
+
+.proposito-container {
+  background-color: #2eddd3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  padding: 60px 40px;
+  flex-wrap: wrap;
+}
+
+.proposito-video video {
+  width: 320px;
+  height: 200px;
+  border-radius: 16px;
+  object-fit: cover;
+  background-color: #eee;
+}
+
+.proposito-texto {
+  max-width: 500px;
+  color: white;
+}
+
+.proposito-texto h2 {
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 16px;
+}
+
+.proposito-texto p {
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+.contatos-container {
+  display: grid;
+  grid-template-columns: repeat(3, 284px); /* 3 colunas fixas */
+  justify-content: center;
+  gap: 24px 40px; /* linha x coluna */
+  padding: 40px 20px;
+}
+
+
+
+.mini-card {
+  width: 284px;
+  height: 82px;
+  background-color: #FCD29F;
+  border-radius: 12px;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 500;
+  color: #333;
+  padding: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.mini-card strong {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.mini-card.azul {
+  background-color: #96E9E7;
+}
+
+.footer {
+  background-color: #FCD29F;
+  padding: 40px 60px 20px;
+  font-family: "Poppins", sans-serif;
+  color: #000;
+}
+
+.footer-top-logo {
+  display: flex;
+  justify-content: flex-start; 
+  align-items: center;
+  gap: 1404px; 
+  margin-bottom: 10px;
+}
+.footer-top-row {
+  display: flex;
+  justify-content: space-between; 
+  align-items: center;
+  margin-bottom: 40px;
+  max-width: 1200px;
+  margin-inline: auto;
+  padding-inline: 20px;
+}
+
+
+.logo-footer {
+  max-width: 160px;
+}
+
+.footer-social {
+  display: flex;
+  gap: 24px;
+  display: flex;
+justify-content: space-between;
+
+}
+
+.footer-social a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer-social a img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  padding: 8px;
+  transition: transform 0.3s ease;
+}
+.footer-social {
+  display: flex;
+  justify-content: flex-start; /* <<< isso alinha os ícones à esquerda */
+  gap: 24px;
+}
+
+
+.footer-social a img:hover {
+  transform: scale(1.1);
+  
+}
+
+.footer-columns {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  gap: 100px;
+  margin-bottom: 40px;
+}
+
+
+.footer-col {
+  min-width: 200px;
+}
+
+.footer-col h3 {
+  font-weight: 600;
+  margin-bottom: 14px;
+}
+
+.footer-col ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-col ul li {
+  margin-bottom: 14px;
+}
+
+.footer-col ul li a {
+  color: #000;
+  text-decoration: none;
+  font-size: 16px;
+  transition: color 0.3s ease;
+}
+
+
+.footer-col p {
+  margin: 6px 0;
+  font-size: 16px;
+}
+
+
+.footer-bottom {
+  text-align: center;
+  font-size: 14px;
+  color: #333;
+  font-weight: bold;
+}
+
+@media (max-width: 1024px) {
+  .header {
+    flex-direction: column;
+    gap: 16px;
+    text-align: center;
+  }
+
+  .menu {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .botoes {
+    flex-direction: column;
+  }
+
+  .hero {
+    flex-direction: column;
+    padding: 40px 20px;
+  }
+
+  .card-grid {
+    grid-template-columns: 1fr;
+    padding: 20px;
+  }
+
+  .proposito-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .contatos-container {
+    grid-template-columns: 1fr;
+  }
+
+  .footer-columns {
+    flex-direction: column;
+    gap: 40px;
+    align-items: flex-start;
+  }
+
+  .footer-top-row {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .footer-social {
+    justify-content: center;
+  }
+
+  .footer-bottom {
+    padding-top: 20px;
+    text-align: center;
+  }
+}
