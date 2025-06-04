@@ -1,6 +1,7 @@
 body {
   margin: 0;
   font-family: "Poppins", sans-serif;
+  overflow-x: hidden;
 }
 
 .container {
@@ -13,7 +14,6 @@ body {
 .header {
   background-color: #f8f8f8;
   padding: 16px 0;
-  /* Removemos o padding lateral */
 }
 
 .header-inner {
@@ -186,8 +186,8 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  min-height: 260px; /* ↓ Reduzido de 320px para 260px */
-  padding: 20px;      /* ↓ Reduzido de 24px para 20px */
+  min-height: 260px;
+  padding: 20px;
   border-radius: 16px;
   background-color: #FCD29F;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
@@ -302,10 +302,8 @@ body {
 .contatos-container {
   display: grid;
   grid-template-columns: repeat(3, 284px);
-  /* 3 colunas fixas */
   justify-content: center;
   gap: 24px 40px;
-  /* linha x coluna */
   padding: 40px 20px;
 }
 
@@ -352,13 +350,11 @@ body {
 .footer-top {
   display: flex;
   justify-content: space-between;
-  /* Logo à esquerda, ícones à direita */
   align-items: center;
   flex-wrap: wrap;
   margin-bottom: 30px;
   padding: 0 20px;
   flex-direction: row;
-  /* ← importante */
 }
 
 .footer-logo {
@@ -395,13 +391,11 @@ body {
   gap: 80px;
   margin-bottom: 30px;
   text-align: left;
-  /* ← isso alinha o texto à esquerda */
 }
 
 .footer-col {
   min-width: 200px;
   text-align: left;
-  /* ← importante também */
 }
 
 
@@ -570,9 +564,6 @@ body {
 }
 
 
-
-
-/* Tablets e notebooks menores */
 @media (max-width: 1024px) {
   .header {
     flex-direction: column;
@@ -624,7 +615,6 @@ body {
   }
 }
 
-/* Celulares (muito estreitos) */
 @media (max-width: 768px) {
   .hero-texto h1 {
     font-size: 24px;
@@ -679,7 +669,6 @@ body {
   }
 }
 
-/* Celulares muito pequenos (ex: iPhone SE) */
 @media (max-width: 480px) {
   .logo img {
     height: 32px;
@@ -700,14 +689,12 @@ body {
 @media (max-width: 1024px) {
   .card-grid {
     grid-template-columns: repeat(2, 1fr);
-    /* 2 por linha */
   }
 }
 
 @media (max-width: 768px) {
   .card-grid {
     grid-template-columns: 1fr;
-    /* 1 por linha */
   }
 
   .card {
