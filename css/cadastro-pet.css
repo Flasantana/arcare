@@ -1,4 +1,3 @@
-
 * {
   margin: 0;
   padding: 0;
@@ -8,17 +7,30 @@
 body {
   font-family: 'Poppins', sans-serif;
   background-color: #ffffff;
-  
+
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  /* já deve estar assim */
 }
 
 
 .header {
   background-color: #f8f8f8;
-  padding: 16px 40px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+  padding: 16px 0;
 }
+
+
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
 
 .logo img {
   height: 40px;
@@ -39,6 +51,11 @@ body {
   gap: 6px;
 }
 
+.manu-btn {
+  min-width: 160px;
+}
+
+
 .breadcrumb {
   font-size: 14px;
   padding: 10px 40px;
@@ -51,22 +68,22 @@ body {
 }
 
 .ajuda-chamada {
-  padding: 10px;
-  max-width: 800px;
-  margin: 0;
-  padding-left: 40px; 
+  padding: 40px 0;
+  text-align: left;
 }
+
+
 .ajuda-chamada h1 {
   font-size: 40px;
   font-weight: 700;
   margin-bottom: 10px;
-  text-align: left;      
+  text-align: left;
 }
 
 .ajuda-chamada p {
   font-size: 20px;
   color: #555;
-  text-align: left;     
+  text-align: left;
 }
 
 
@@ -84,12 +101,12 @@ body {
 }
 
 .toggle-buttons button {
-  padding: 35px 20px;
+  padding: 18px 24px;
   border: none;
   background-color: #fcd29f;
   color: #f7944d;
   font-weight: 600;
-  font-size: 24px;
+  font-size: 16px;
   cursor: pointer;
   transition: background-color 0.3s ease;
 }
@@ -98,7 +115,6 @@ body {
   background-color: #f8a24b;
   color: white;
 }
-
 
 .formulario {
   max-width: 900px;
@@ -158,7 +174,7 @@ textarea {
   border-radius: 25px;
   font-weight: bold;
   cursor: pointer;
-  margin: 40px auto 60px auto; 
+  margin: 40px auto;
   display: block;
 }
 
@@ -176,8 +192,10 @@ textarea {
   display: none;
   position: fixed;
   z-index: 1000;
-  left: 0; top: 0;
-  width: 100%; height: 100%;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
   background-color: rgba(0, 0, 0, 0.5);
 }
 
@@ -215,4 +233,29 @@ textarea {
   color: white;
 }
 
+@media (max-width: 600px) {
+  .toggle-buttons {
+    flex-direction: column;
+    width: 100%;
+    padding: 10px;
+    border-radius: 20px;
+  }
 
+  .toggle-buttons button {
+    width: 100%;
+    font-size: 14px;
+    padding: 10px 16px;
+    border-radius: 12px;
+  }
+
+  .btn-cadastrar {
+    width: 100%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .toggle-buttons button {
+    font-size: 18px;
+    padding: 14px 28px;
+  }
+}

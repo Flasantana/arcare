@@ -11,36 +11,30 @@
   <link rel="stylesheet" href="./css/cadastro-pet.css" />
 </head>
 <body>
-  <header class="header">
-    <div class="logo">
-      <img src="./assets/img/icon/logo1.png" alt="Logo ARCARE" />
-    </div>
-    
-    <!-- Botão da Manu -->
-<button id="btn-manu" class="manu-btn">
-  manu.pereira <img src="./assets/img/icon/usuario.png" alt="ícone usuário" style="width: 16px; margin-left: 6px;" />
-</button>
-
-<!-- Modal -->
-<div id="modal-manu" class="modal">
-  <div class="modal-content">
-    <p>Deseja realmente sair?</p>
-    <div class="modal-buttons">
-      <button onclick="logout()">Sair</button>
-      <button onclick="closeModal()">Cancelar</button>
+<header class="header">
+  <div class="container">
+    <div class="header-content">
+      <div class="logo">
+        <img src="./assets/img/icon/logo1.png" alt="Logo ARCARE" />
+      </div>
+      <button id="btn-manu" class="manu-btn">
+        manu.pereira <img src="./assets/img/icon/usuario.png" alt="ícone usuário" style="width: 16px; margin-left: 6px;" />
+      </button>
     </div>
   </div>
-</div>
-  </header>
-  <nav class="breadcrumb">
+</header>
+
+
+<nav class="breadcrumb">
+  <div class="container">
     <a href="./login-realizado.html">Home</a> &gt; <strong>Cadastro Humanos & Pets</strong>
-  </nav>
+  </div>
+</nav>
 
-
-  <section class="ajuda-chamada">
-    <h1>Cadastre para agilizar a ajuda</h1>
-    <p>Preencha os dados do animal para que ele possa ser identificado e socorrido rapidamente.</p>
-  </section>
+<section class="ajuda-chamada container">
+  <h1>Cadastre para agilizar a ajuda</h1>
+  <p>Preencha os dados do animal para que ele possa ser identificado e socorrido rapidamente.</p>
+</section>
 
   <div class="toggle-buttons">
     <button onclick="window.location.href='cadastro-humano.html'">Para Humanos</button>
@@ -122,7 +116,7 @@
       <textarea rows="4" required></textarea>
     </div>
     <div class="form-group full-width center">
-  <button type="button" class="btn-cadastrar" onclick="window.location.href='pet-cadastrado.html'">Ir para cadastrados</button>
+  <button type="button" class="btn-cadastrar" onclick="window.location.href='pet-cadastrado.html'">Cadastrar</button>
 </div>
 
   </form>
@@ -147,7 +141,7 @@
   </div>
 </footer>
 </body>
-<!-- Modal de Logout -->
+
 <div id="modal-manu" class="modal">
   <div class="modal-content">
     <p>Deseja realmente sair?</p>

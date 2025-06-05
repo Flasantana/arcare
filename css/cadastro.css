@@ -4,6 +4,13 @@ body {
   background-color: #ffffff;
 }
 
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+
 .login-header {
   display: flex;
   justify-content: space-between;
@@ -33,6 +40,21 @@ body {
   color: #333;
 }
 
+.login-header,
+.breadcrumb,
+.login-container {
+  padding: 16px 0;
+}
+
+.login-header .container,
+.breadcrumb .container,
+.login-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
 .login-container {
   display: flex;
   justify-content: center;
@@ -51,7 +73,6 @@ body {
 .login-form {
   max-width: 320px;
   width: 100%;
-  margin-right: 260px;
 }
 
 .login-form h2 {
@@ -82,15 +103,25 @@ body {
 }
 
 .login-form button {
-  width: 100%;
+  width: 60%;
+
+  max-width: 200px;
   padding: 10px;
-  border-radius: 20px;
+  border-radius: 30px;
   border: none;
   background-color: #f8a24b;
   color: white;
   font-weight: bold;
   cursor: pointer;
+  margin-top: 20px;
 }
+
+.login-form input,
+.login-form button {
+  box-sizing: border-box;
+}
+
+
 
 .divider {
   text-align: center;
@@ -122,4 +153,18 @@ body {
   padding: 100px;
   color: #333;
   font-weight: bold;
+}
+
+.btn-arcare {
+  background-color: #f8a24b;
+  color: #FCD29F;
+  font-weight: bold;
+  border: none;
+  border-radius: 20px;
+  padding: 10px 20px;
+}
+
+.btn-arcare:hover {
+  background-color: #e18f39;
+  color: #FCD29F;
 }
