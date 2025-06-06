@@ -1,6 +1,6 @@
 body {
   margin: 0;
-  font-family: "Poppins", sans-serif;
+  font-family: "Gabarito", sans-serif;
   overflow-x: hidden;
 }
 
@@ -79,7 +79,7 @@ html {
 }
 
 .btn-cadastrar {
-  background-color: #2eddd3;
+  background-color: #17BEBB;
   color: #fff;
 }
 
@@ -114,7 +114,7 @@ html {
 }
 
 .hero-texto h1 {
-  font-size: 30px;
+  font-size: 36px;
   font-weight: bold;
   margin-bottom: 20px;
 }
@@ -131,15 +131,20 @@ html {
   flex-wrap: wrap;
 }
 
-.btn-acao {
+.hero-botoes button {
   padding: 10px 24px;
   border: none;
   border-radius: 22px;
   font-size: 16px;
   font-weight: 500;
-  background-color: #2eddd3;
-  color: white;
+  background-color: #17BEBB;
+  color: #f1f1f1;
   cursor: pointer;
+}
+
+.hero-botoes button:hover{
+  background-color: #1d9694;
+  transition: 0.3s;
 }
 
 .hero-imagem {
@@ -155,7 +160,6 @@ html {
   object-fit: cover;
 }
 
-
 .ajuda-container {
   background-color: #ffffff;
   padding: 60px 20px;
@@ -165,7 +169,7 @@ html {
 }
 
 .ajuda-container h2 {
-  font-size: 32px;
+  font-size: 36px;
   font-weight: bold;
   color: #333333;
   margin-bottom: 20px;
@@ -204,7 +208,7 @@ html {
 }
 
 .card h2 {
-  font-size: 20px;
+  font-size: 34px;
   font-weight: bold;
   margin-bottom: 12px;
 }
@@ -228,38 +232,14 @@ html {
 
 .card button:hover {
   background-color: #f8a24b;
-}
-
-
-.emergencia-container {
-  text-align: center;
-  padding: 0px 60px;
-}
-
-.emergencia-container h2 {
-  font-size: 40px;
-  font-weight: bold;
-  margin-bottom: 20px;
-  color: #333;
-}
-
-.emergencia-container p {
-  font-size: 18px;
-  max-width: 700px;
-  margin: 0 auto 30px;
-  line-height: 1.6;
-  color: #555;
-}
-
-.emergencia-container img {
-  max-width: 500px;
-  width: 100%;
-  border-radius: 12px;
+  transition: 0.3s;
 }
 
 .proposito-container {
   background-color: #2eddd3;
   padding: 60px 0;
+  margin-top: 80px;
+  margin-bottom: 80px;
 }
 
 .proposito-container .container {
@@ -292,7 +272,7 @@ html {
 }
 
 .proposito-texto h2 {
-  font-size: 28px;
+  font-size: 36px;
   font-weight: 700;
   margin-bottom: 16px;
 }
@@ -300,6 +280,32 @@ html {
 .proposito-texto p {
   font-size: 18px;
   line-height: 1.6;
+}
+
+.emergencia-container {
+  text-align: center;
+  padding: 0px 60px;
+}
+
+.emergencia-container h2 {
+  font-size: 36px;
+  font-weight: bold;
+  color: #333333;
+  margin-bottom: 20px;
+}
+
+.emergencia-container p {
+  font-size: 18px;
+  max-width: 700px;
+  margin: 0 auto 30px;
+  line-height: 1.6;
+  color: #555;
+}
+
+.emergencia-container img {
+  max-width: 500px;
+  width: 100%;
+  border-radius: 12px;
 }
 
 
@@ -342,7 +348,7 @@ html {
   background-color: #FCD29F;
   color: #000;
   padding: 40px 0 20px;
-  font-family: "Poppins", sans-serif;
+  margin-top: 80px;
 }
 
 .footer .container {
